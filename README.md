@@ -48,7 +48,10 @@ Not acceptable:
 - "NexusHub official website"
 - Using the NexusHub name/logo in a way that suggests your project is the original official project
 
-## License
+### License
 
-This website is licensed under the GNU General Public License v3.0, matching the main NexusHub project.
+This website is licensed under the GNU General Public License v3.0.
+
+Copyright (C) 2026 TomeksDEV
+
 See [LICENSE](LICENSE) for details.
