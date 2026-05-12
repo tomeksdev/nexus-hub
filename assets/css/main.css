@@ -1076,17 +1076,127 @@ a {
     width: 100%;
   }
 
-  .dashboard-frame,
-  .dashboard-frame.compact {
-    grid-template-columns: 1fr;
+  .dashboard-frame {
+    grid-template-columns: 92px minmax(0, 1fr);
+    min-height: 340px;
+    border-radius: 10px;
   }
 
   .app-sidebar {
+    display: block;
+    padding: 0.8rem 0.55rem;
+  }
+
+  .mini-brand {
+    gap: 0.28rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.62rem;
+  }
+
+  .mini-logo {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  .app-sidebar small {
+    margin: 0.65rem 0 0.25rem;
+    font-size: 0.46rem;
+  }
+
+  .app-sidebar span {
+    gap: 0.28rem;
+    min-height: 1.25rem;
+    font-size: 0.48rem;
+  }
+
+  .app-sidebar span i {
+    width: 0.58rem;
+  }
+
+  .app-main {
+    padding: 0.7rem;
+  }
+
+  .app-topbar {
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .app-topbar strong {
+    font-size: 0.78rem;
+  }
+
+  .avatar {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.42rem;
+  }
+
+  .stats-grid article {
+    padding: 0.5rem;
+  }
+
+  .stats-grid small,
+  .stats-grid span {
+    font-size: 0.43rem;
+  }
+
+  .stats-grid strong {
+    font-size: 0.84rem;
+  }
+
+  .preview-grid {
+    grid-template-columns: minmax(0, 3fr) minmax(70px, 1.1fr);
+    gap: 0.42rem;
+    margin-top: 0.42rem;
+  }
+
+  .chart-panel,
+  .donut-panel,
+  .table-panel {
+    padding: 0.5rem;
+  }
+
+  .panel-head,
+  .donut-panel > span {
+    font-size: 0.48rem;
+  }
+
+  .panel-head small {
     display: none;
   }
 
+  .chart-panel svg {
+    height: 90px;
+  }
+
+  .donut {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.55rem auto;
+  }
+
+  .donut::after {
+    inset: 0.78rem;
+  }
+
+  .donut-panel li {
+    font-size: 0.42rem;
+  }
+
+  .table-panel {
+    margin-top: 0.42rem;
+  }
+
   .row-item {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr 1.1fr 0.8fr;
+    gap: 0.35rem;
+    padding: 0.28rem 0;
+    font-size: 0.43rem;
   }
 
   .quick-features .col-md-3 > div,
@@ -1124,15 +1234,33 @@ a {
 
 @media (max-width: 480px) {
   .stats-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .app-main {
-    padding: 1rem;
+  .dashboard-frame {
+    grid-template-columns: 76px minmax(0, 1fr);
+    min-height: 300px;
+  }
+
+  .app-sidebar {
+    padding: 0.65rem 0.42rem;
+  }
+
+  .mini-brand {
+    font-size: 0.52rem;
+  }
+
+  .app-sidebar small {
+    font-size: 0.4rem;
+  }
+
+  .app-sidebar span {
+    font-size: 0.4rem;
+    min-height: 1.1rem;
   }
 
   .chart-panel svg {
-    height: 130px;
+    height: 76px;
   }
 
   .contribute-panel {
