@@ -1,4 +1,14 @@
-# NexusHub Website
+<p align="center">
+  <a href="https://nexushub.tools">
+    <img src="assets/img/logo.png" alt="NexusHub Logo" width="170">
+  </a>
+</p>
+
+<h1 align="center">NexusHub Website</h1>
+
+<p align="center">
+  Official Jekyll landing page and documentation site for NexusHub.
+</p>
 
 [![Jekyll Check](https://github.com/tomeksdev/nexus-hub/actions/workflows/jekyll-check.yml/badge.svg)](https://github.com/tomeksdev/nexus-hub/actions/workflows/jekyll-check.yml)
 [![Code Scan](https://github.com/tomeksdev/nexus-hub/actions/workflows/code-scan.yml/badge.svg)](https://github.com/tomeksdev/nexus-hub/actions/workflows/code-scan.yml)
