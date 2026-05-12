@@ -1,0 +1,16 @@
+- title: User guide
+  icon: fa-regular fa-compass
+  href: /docs/user-guide/
+  text: First login, creating interfaces, adding peers, eBPF rules, 2FA, audit logs, and backup basics.
+- title: Deployment guide
+  icon: fa-solid fa-rocket
+  href: /docs/deployment/
+  text: Docker Compose, bare-metal systemd, and Helm deployment paths with required secrets and operational notes.
+- title: API reference
+  icon: fa-solid fa-file-code
+  href: /docs/api/
+  text: Rendered OpenAPI docs and the embedded raw API spec served from running NexusHub instances.
+- title: Backup and restore
+  icon: fa-solid fa-database
+  href: /docs/backup-restore/
+  text: Postgres dumps, encryption key handling, restore checks, and disaster recovery drill guidance.

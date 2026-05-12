@@ -1,0 +1,27 @@
+- title: Peer lifecycle
+  icon: fa-solid fa-user-shield
+  text: Create, rotate, revoke, and export peers with QR-code and WireGuard config handoff.
+- title: Interface management
+  icon: fa-solid fa-network-wired
+  text: Manage multiple wg interfaces with IP pool allocation, DNS push, and endpoint handling.
+- title: eBPF security rules
+  icon: fa-solid fa-microchip
+  text: Enforce filters, bandwidth metering, connection limits, and log actions directly in the kernel.
+- title: Role-based access
+  icon: fa-solid fa-users-gear
+  text: Separate super-admin, admin, and user workflows with audit logging for every mutation.
+- title: API, CLI, dashboard
+  icon: fa-solid fa-terminal
+  text: Operate NexusHub from the web UI, REST API, or the nexushub CLI with the same capabilities.
+- title: Observability
+  icon: fa-solid fa-gauge-high
+  text: Export Prometheus metrics, OpenTelemetry traces, Grafana dashboards, and alert examples.
+- title: Deploy anywhere
+  icon: fa-solid fa-boxes-stacked
+  text: Run with Docker Compose, bare-metal systemd, or Kubernetes Helm using production-ready guides.
+- title: Security operations
+  icon: fa-solid fa-key
+  text: TOTP, encrypted peer keys, retention-managed audit logs, and backup guidance for operators.
+- title: Modern stack
+  icon: fa-solid fa-code
+  text: Go, PostgreSQL, React, TypeScript, Tailwind, Recharts, Playwright, and GitHub Actions.

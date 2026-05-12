@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="docs-shell">
+  <div class="container-xl">
+    <div class="docs-layout">
+      <aside class="docs-sidebar" aria-label="Documentation navigation">
+        <a href="{{ '/docs/' | relative_url }}">Docs home</a>
+        <a href="{{ '/docs/user-guide/' | relative_url }}">User guide</a>
+        <a href="{{ '/docs/deployment/' | relative_url }}">Deployment guide</a>
+        <a href="{{ '/docs/api/' | relative_url }}">API reference</a>
+        <a href="{{ '/docs/backup-restore/' | relative_url }}">Backup & restore</a>
+        <a href="{{ '/docs/observability/' | relative_url }}">Observability</a>
+        <a href="{{ '/docs/load-testing/' | relative_url }}">Load testing</a>
+        <a href="{{ '/docs/migration-from-v1/' | relative_url }}">Migration from v1</a>
+      </aside>
+      <article class="docs-content">
+        {{ content }}
+      </article>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,216 @@
+---
+layout: default
+title: NexusHub
+description: Self-hosted WireGuard management dashboard with eBPF security rules.
+---
+
+{% include header.html %}
+
+<main id="home">
+  <section class="hero-section">
+    <div class="container-xl">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <span class="eyebrow">Open Source</span>
+          <h1>Your central hub <span>for WireGuard</span> management</h1>
+          <p class="hero-copy">NexusHub is a self-hosted control plane for WireGuard that pairs a Go backend, React dashboard, and programmable eBPF data-plane rules in one secure interface.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#docs">
+              <span>Get Started</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/tomeksdev/NexusHub">
+              <span>View on GitHub</span>
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div class="trust-row" aria-label="Project qualities">
+            <span><i class="fa-solid fa-shield-halved"></i>Secure by default</span>
+            <span><i class="fa-solid fa-server"></i>Self-hosted</span>
+            <span><i class="fa-brands fa-osi"></i>Open Source</span>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="dashboard-frame" aria-label="Dashboard preview">
+            <div class="app-sidebar">
+              <div class="mini-brand"><span class="mini-logo"></span>NexusHub</div>
+              <small>Main</small>
+              <span><i class="fa-solid fa-location-dot"></i>Locations</span>
+              <span><i class="fa-regular fa-user"></i>Users</span>
+              <span><i class="fa-solid fa-chart-line"></i>Monitoring</span>
+              <small>Configuration</small>
+              <span><i class="fa-solid fa-gear"></i>Global Configuration</span>
+              <span><i class="fa-solid fa-layer-group"></i>Groups</span>
+              <span><i class="fa-solid fa-link"></i>Access Rules</span>
+            </div>
+            <div class="app-main">
+              <div class="app-topbar">
+                <strong>Dashboard</strong>
+                <div>
+                  <i class="fa-regular fa-bell"></i>
+                  <span class="avatar"></span>
+                </div>
+              </div>
+              <div class="stats-grid">
+                <article><small>Locations</small><strong>12</strong><span>Active locations</span></article>
+                <article><small>Users</small><strong>84</strong><span>Active users</span></article>
+                <article><small>Total Bandwidth</small><strong>2.45 TB</strong><span>This month</span></article>
+                <article><small>Active Connections</small><strong>128</strong><span>Now online</span></article>
+              </div>
+              <div class="preview-grid">
+                <div class="chart-panel">
+                  <div class="panel-head"><span>Bandwidth Overview</span><small><b></b>Download <b class="muted"></b>Upload</small></div>
+                  <svg viewBox="0 0 600 230" preserveAspectRatio="none" aria-hidden="true">
+                    <path class="grid-line" d="M0 180H600M0 130H600M0 80H600M0 30H600"/>
+                    <polyline class="line line-red" points="0,180 38,160 76,140 114,96 152,118 190,70 228,96 266,62 304,78 342,42 380,80 418,98 456,76 494,82 532,48 570,66 600,72"/>
+                    <polyline class="line line-gray" points="0,200 38,184 76,170 114,190 152,150 190,170 228,130 266,156 304,112 342,140 380,124 418,148 456,130 494,110 532,118 570,92 600,82"/>
+                  </svg>
+                </div>
+                <div class="donut-panel">
+                  <span>Bandwidth by Location</span>
+                  <div class="donut"></div>
+                  <ul>
+                    <li><b></b>New York <span>38%</span></li>
+                    <li><b></b>Frankfurt <span>27%</span></li>
+                    <li><b></b>Singapore <span>18%</span></li>
+                    <li><b></b>London <span>17%</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="table-panel">
+                <div class="row-item head"><span>User</span><span>Location</span><span>Last Handshake</span><span>Transfer</span></div>
+                <div class="row-item"><span>john.doe</span><span>New York</span><span>2 minutes ago</span><span>12.4 GB</span></div>
+                <div class="row-item"><span>alice.smith</span><span>Frankfurt</span><span>3 minutes ago</span><span>8.7 GB</span></div>
+                <div class="row-item"><span>mark.jones</span><span>Singapore</span><span>5 minutes ago</span><span>6.1 GB</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-features" aria-label="Primary feature summary">
+    <div class="container-xl">
+      <div class="row g-0">
+        <div class="col-md-3"><div><i class="fa-solid fa-network-wired"></i><strong>WireGuard Management</strong><span>Manage locations, peers, and configurations with ease.</span></div></div>
+        <div class="col-md-3"><div><i class="fa-solid fa-lock"></i><strong>Access Control</strong><span>Create groups and define powerful access rules.</span></div></div>
+        <div class="col-md-3"><div><i class="fa-solid fa-chart-simple"></i><strong>Monitoring</strong><span>Real-time bandwidth and connection insights.</span></div></div>
+        <div class="col-md-3"><div><i class="fa-solid fa-shield-heart"></i><strong>Security</strong><span>2FA, audit logs, and eBPF-powered protection.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section-pad light-band">
+    <div class="container-xl">
+      <div class="section-heading">
+        <span>Features</span>
+        <h2>Everything needed to operate WireGuard securely</h2>
+      </div>
+      <div class="row g-4">
+        {% assign features = site.data.features %}
+        {% for feature in features %}
+        <div class="col-md-6 col-xl-4">
+          <article class="feature-card">
+            <i class="{{ feature.icon }}"></i>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.text }}</p>
+          </article>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="section-pad screenshots-section">
+    <div class="container-xl">
+      <div class="section-heading inverse">
+        <span>Screenshots</span>
+        <h2>Dashboard views ready for real project captures</h2>
+      </div>
+      <div class="screenshot-grid">
+        <article class="screenshot-large">
+          <div class="dashboard-frame compact" aria-hidden="true">
+            <div class="app-sidebar"></div>
+            <div class="app-main">
+              <div class="stats-grid"><article></article><article></article><article></article></div>
+              <div class="chart-panel"><svg viewBox="0 0 600 220" preserveAspectRatio="none"><polyline class="line line-red" points="0,180 80,120 130,150 210,68 300,110 380,54 470,90 600,42"/></svg></div>
+            </div>
+          </div>
+          <h3>Operations Dashboard</h3>
+          <p>Replace this preview with the final NexusHub dashboard screenshot once the application UI is ready.</p>
+        </article>
+        <div class="screenshot-side">
+          <article><i class="fa-solid fa-users-gear"></i><h3>Peer Management</h3><p>Peer creation, config export, QR handoff, and PSK rotation.</p></article>
+          <article><i class="fa-solid fa-filter-circle-xmark"></i><h3>Rule Editor</h3><p>Allow, deny, log, and rate-limit rules for eBPF enforcement.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="docs" class="section-pad light-band">
+    <div class="container-xl">
+      <div class="section-heading">
+        <span>Docs</span>
+        <h2>Deployment and day-to-day administration</h2>
+      </div>
+      <div class="docs-grid">
+        {% for doc in site.data.docs %}
+        <article class="doc-card">
+          <i class="{{ doc.icon }}"></i>
+          <h3>{{ doc.title }}</h3>
+          <p>{{ doc.text }}</p>
+          <a href="{{ doc.href | relative_url }}">Read doc <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="section-pad roadmap-section">
+    <div class="container-xl">
+      <div class="section-heading inverse">
+        <span>Roadmap</span>
+        <h2>Path to NexusHub v2.0.0</h2>
+      </div>
+      <div class="roadmap">
+        {% for item in site.data.roadmap %}
+        <article class="{{ item.state }}">
+          <span>{{ item.phase }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section id="contribute" class="section-pad contribute-section">
+    <div class="container-xl">
+      <div class="contribute-panel">
+        <div>
+          <span class="eyebrow">Contribute</span>
+          <h2>Help build a secure open-source WireGuard control plane</h2>
+          <p>Open issues, review pull requests, test deployments, write docs, or sponsor development once the donation target is finalized.</p>
+        </div>
+        <div class="contribute-actions">
+          <a class="btn btn-dark" href="https://github.com/tomeksdev/NexusHub/issues">
+            <i class="fa-regular fa-circle-dot"></i>
+            <span>Open Issues</span>
+          </a>
+          <a class="btn btn-outline-dark disabled" aria-disabled="true" href="#contribute">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Donation link coming soon</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container-xl">
+    <span>© 2026 NexusHub</span>
+    <p>© 2026 <a href="https://tomeksdev.com">TomeksDEV</a> · Crafted with Jekyll and a lot of coffee.</p>
+  </div>
+</footer>

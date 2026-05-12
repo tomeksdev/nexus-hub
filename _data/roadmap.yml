@@ -1,0 +1,20 @@
+- phase: Phase 1-5
+  state: done
+  title: Foundation and dataplane
+  text: Repo scaffolding, database, auth, WireGuard core, and most eBPF rule loading work are complete upstream.
+- phase: Phase 6-8
+  state: done
+  title: Product surface
+  text: Backend API, frontend dashboard, and CLI workflows are largely implemented, including rules, metrics, and admin pages.
+- phase: Phase 9-10
+  state: active
+  title: Testing and observability
+  text: Frontend tests, load baseline, Prometheus, Grafana, tracing, audit retention, and alert examples are in place.
+- phase: Phase 11
+  state: active
+  title: Packaging and deployment
+  text: Multi-arch images, systemd units, install scripts, Docker+Caddy, Helm, and backup docs are being finalized.
+- phase: Phase 12
+  state: next
+  title: Launch readiness
+  text: Screenshots, release notes, changelog, v2.0.0 tag, and final launch content remain before GA.

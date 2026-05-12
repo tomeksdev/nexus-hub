@@ -1,0 +1,12 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/bundle/
+node_modules/
+package-lock.json
+Gemfile.lock
+design_paterns_and_example.png
+AGENT.md
+AGENTS.md
+NexusHub_Logo_2_Hexagon.png

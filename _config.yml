@@ -1,0 +1,25 @@
+title: NexusHub
+description: Self-hosted WireGuard management with eBPF security rules.
+url: "https://tomeksdev.github.io"
+baseurl: "/nexus-hub"
+repository: tomeksdev/nexus-hub
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - AGENTS.md
+  - AGENT.md
+  - design_paterns_and_example.png
+  - node_modules/
+  - vendor/
+  - package-lock.json
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+  - TODO.md
+  - README.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

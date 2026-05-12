@@ -1,0 +1,14 @@
+{
+  "name": "nexushub-pages",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Jekyll landing page for NexusHub GitHub Pages.",
+  "scripts": {
+    "vendor": "node scripts/vendor-assets.mjs",
+    "check:cdn": "node scripts/check-no-cdn.mjs"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "7.2.0",
+    "bootstrap": "5.3.8"
+  }
+}
