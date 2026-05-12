@@ -52,5 +52,3 @@ Not acceptable:
 
 This website is licensed under the GNU General Public License v3.0, matching the main NexusHub project.
 See [LICENSE](LICENSE) for details.
-
-Do not reintroduce `/nexus-hub` into asset paths unless the site is moved back to a project-page URL.
