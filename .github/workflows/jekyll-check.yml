@@ -1,0 +1,50 @@
+name: Jekyll Check
+
+on:
+  push:
+    branches: ["main", "dev"]
+  pull_request:
+    branches: ["main", "dev"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build and validate site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install frontend packages
+        run: npm install
+
+      - name: Vendor local assets
+        run: npm run vendor
+
+      - name: Check for CDN references
+        run: npm run check:cdn
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Verify generated assets
+        run: |
+          test -f _site/index.html
+          test -f _site/assets/css/main.css
+          test -f _site/assets/vendor/bootstrap/js/bootstrap.bundle.min.js
+          test -f _site/assets/vendor/fontawesome/css/all.min.css

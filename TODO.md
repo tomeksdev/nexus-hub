@@ -12,6 +12,7 @@
 - [x] Build responsive home hero matching the supplied NexusHub design language.
 - [x] Add feature cards, dashboard preview, docs summaries, roadmap, screenshots placeholders, and contribution section.
 - [x] Add mobile navigation and responsive layout states.
+- [x] Configure custom-domain publishing from `/` instead of `/nexus-hub/`.
 
 ## Phase 3 - Content Expansion
 
