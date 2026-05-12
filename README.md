@@ -21,7 +21,7 @@
 
 Official Jekyll landing page and documentation site for [NexusHub](https://github.com/tomeksdev/NexusHub), a self-hosted WireGuard management platform with eBPF security rules, dashboard operations, API/CLI workflows, observability, and deployment guides.
 
-The production site is published at [nexushub.tools](https://nexushub.tools). It is designed for GitHub Pages with a custom domain, so `_config.yml` intentionally uses `baseurl: ""`.
+The production site is published at [nexushub.tools](https://nexushub.tools).
 
 ## What This Site Includes
 

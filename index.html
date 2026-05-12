@@ -7,33 +7,36 @@ description: Self-hosted WireGuard management dashboard with eBPF security rules
 {% include header.html %}
 
 <main id="home">
-  <section class="hero-section">
+  <section class="hero-section coming-soon-section">
     <div class="container-xl">
       <div class="row align-items-center g-5">
         <div class="col-lg-5">
-          <span class="eyebrow">Open Source</span>
-          <h1>Your central hub <span>for WireGuard</span> management</h1>
-          <p class="hero-copy">NexusHub is a self-hosted control plane for WireGuard that pairs a Go backend, React dashboard, and programmable eBPF data-plane rules in one secure interface.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-lg" href="#docs">
-              <span>Get Started</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a class="btn btn-outline-light btn-lg" href="https://github.com/tomeksdev/NexusHub">
-              <span>View on GitHub</span>
-              <i class="fa-brands fa-github"></i>
-            </a>
+          <span class="eyebrow split-eyebrow">Open Source <b></b> In Development</span>
+          <h1>NexusHub is coming <span>soon</span></h1>
+          <p class="hero-copy">A self-hosted WireGuard management platform with a Go backend, React dashboard, API and CLI workflows, observability, and programmable eBPF security rules. NexusHub is currently under active development.</p>
+          <div class="coming-note">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Features, screenshots, and release packages may change before the first stable version.</span>
           </div>
-          <div class="trust-row" aria-label="Project qualities">
-            <span><i class="fa-solid fa-shield-halved"></i>Secure by default</span>
-            <span><i class="fa-solid fa-server"></i>Self-hosted</span>
-            <span><i class="fa-brands fa-osi"></i>Open Source</span>
+          <div class="coming-note rewrite-note">
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Heads up — v2.0.0 is a full rewrite. The v1.0.0 bash installer + Python WebGUI is being replaced. Legacy files remain in git history for reference.</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://github.com/tomeksdev/NexusHub">
+              <i class="fa-brands fa-github"></i>
+              <span>View Development on GitHub</span>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/tomeksdev/NexusHub/tree/main/docs">
+              <i class="fa-solid fa-book-open"></i>
+              <span>Read Early Docs</span>
+            </a>
           </div>
         </div>
         <div class="col-lg-7">
           <div class="dashboard-frame" aria-label="Dashboard preview">
             <div class="app-sidebar">
-              <div class="mini-brand"><span class="mini-logo"></span>NexusHub</div>
+              <div class="mini-brand"><img class="mini-logo" src="{{ '/assets/img/N_hexagonal.svg' | relative_url }}" alt="">NexusHub</div>
               <small>Main</small>
               <span><i class="fa-solid fa-location-dot"></i>Locations</span>
               <span><i class="fa-regular fa-user"></i>Users</span>
@@ -90,7 +93,17 @@ description: Self-hosted WireGuard management dashboard with eBPF security rules
     </div>
   </section>
 
-  <section class="quick-features" aria-label="Primary feature summary">
+  <section class="quick-features coming-trust-row" aria-label="Project status summary">
+    <div class="container-xl">
+      <div class="row g-0">
+        <div class="col-md-4"><div><i class="fa-solid fa-code"></i><strong>100% Open Source</strong><span>Transparent, community driven, and GPL-3.0 licensed.</span></div></div>
+        <div class="col-md-4"><div><i class="fa-solid fa-rocket"></i><strong>Under Active Development</strong><span>New features, fixes, and improvements are landing.</span></div></div>
+        <div class="col-md-4"><div><i class="fa-solid fa-shield-halved"></i><strong>Privacy First</strong><span>Self-hosted by design. Your data stays yours.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-features" aria-label="Primary feature summary" hidden>
     <div class="container-xl">
       <div class="row g-0">
         <div class="col-md-3"><div><i class="fa-solid fa-network-wired"></i><strong>WireGuard Management</strong><span>Manage locations, peers, and configurations with ease.</span></div></div>
@@ -101,7 +114,7 @@ description: Self-hosted WireGuard management dashboard with eBPF security rules
     </div>
   </section>
 
-  <section id="features" class="section-pad light-band">
+  <section id="features" class="section-pad light-band" hidden>
     <div class="container-xl">
       <div class="section-heading">
         <span>Features</span>
@@ -122,7 +135,7 @@ description: Self-hosted WireGuard management dashboard with eBPF security rules
     </div>
   </section>
 
-  <section id="screenshots" class="section-pad screenshots-section">
+  <section id="screenshots" class="section-pad screenshots-section" hidden>
     <div class="container-xl">
       <div class="section-heading inverse">
         <span>Screenshots</span>
@@ -148,7 +161,7 @@ description: Self-hosted WireGuard management dashboard with eBPF security rules
     </div>
   </section>
 
-  <section id="docs" class="section-pad light-band">
+  <section id="docs" class="section-pad light-band" hidden>
     <div class="container-xl">
       <div class="section-heading">
         <span>Docs</span>
@@ -167,7 +180,7 @@ description: Self-hosted WireGuard management dashboard with eBPF security rules
     </div>
   </section>
 
-  <section id="roadmap" class="section-pad roadmap-section">
+  <section id="roadmap" class="section-pad roadmap-section" hidden>
     <div class="container-xl">
       <div class="section-heading inverse">
         <span>Roadmap</span>
@@ -185,7 +198,7 @@ description: Self-hosted WireGuard management dashboard with eBPF security rules
     </div>
   </section>
 
-  <section id="contribute" class="section-pad contribute-section">
+  <section id="contribute" class="section-pad contribute-section" hidden>
     <div class="container-xl">
       <div class="contribute-panel">
         <div>
